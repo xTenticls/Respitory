@@ -1082,11 +1082,13 @@ function RayfieldLibrary:CreateWindow(Settings)
 					    local ReplicatedStorage = game:GetService("ReplicatedStorage")
 					    local LocalPlayer = Players.LocalPlayer
   					      while true do
-  					          local args = {
+    					        local args = {
       					          [1] = "Start",
-      					          [2] = workspace.NPC.MiniMartNPC.NPCTag.Dialogue
+       					         [2] = workspace.NPC.MiniMartNPC.NPCTag.Dialogue
     					        }
-   					         game:GetService("ReplicatedStorage").Events.NPCService:FireServer(unpack(args))
+
+    					        game:GetService("ReplicatedStorage").Events.NPCService:FireServer(unpack(args))
+
    					         print("YOU FUCKING WEIRDO")
     					        Players:Chat("/s I HACK PLEASE BAN ME I AM BAD AT IT TO")
   					          wait()
