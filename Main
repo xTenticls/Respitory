@@ -1084,7 +1084,7 @@ function RayfieldLibrary:CreateWindow(Settings)
   					      while true do
   					          local args = {
       					          [1] = "Start",
-      					          [2] = workspace.NPC.BricktonGasNPPC.NPCTag.Dialogue
+      					          [2] = workspace.NPC.MiniMartNPC.NPCTag.Dialogue
     					        }
    					         game:GetService("ReplicatedStorage").Events.NPCService:FireServer(unpack(args))
    					         print("YOU FUCKING WEIRDO")
