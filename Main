@@ -1092,7 +1092,7 @@ function RayfieldLibrary:CreateWindow(Settings)
    					         print("YOU FUCKING WEIRDO")
     					        Players:Chat("/s I HACK PLEASE BAN ME I AM BAD AT IT TO")
   					          wait()
-						wait(0.45)
+						wait(5)
 						game:Shutdown()
 					    	end
 						end
